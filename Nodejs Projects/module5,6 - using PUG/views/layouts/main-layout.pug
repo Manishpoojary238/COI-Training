@@ -1,0 +1,21 @@
+//-comman code for all the views
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{pageTitle}
+        link(rel="stylesheet", href="/css/main.css")
+        block styles
+        //-here block style is the empty place holder which will be filled by respective view pages
+    body   
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/", class=(path === '/' ? 'active' : '')) Shop
+                    li.main-header__item
+                        a(href="/admin-page/add-product", class=(path === '/admin-page/add-product' ? 'active' : '')) Add Product
+        block content
+        //-here block content is the empty place holder which will be filled by respective view pages
